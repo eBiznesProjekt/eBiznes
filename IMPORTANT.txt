@@ -1,0 +1,3 @@
+Please use git branches between new tasks related to Trello 'cards' and use similar names.
+and push them to remote (test) branch along with 'git pull origin test' ALWAYS.
+Merging to origin/master will be only after bug fixes and validation.
