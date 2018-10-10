@@ -1,0 +1,2 @@
+skopiuj docker-compose.yml do g³ównego folderu
+odpal komend¹ 'docker-compose up'. W teeeeeorii powinno dzia³aæ.
