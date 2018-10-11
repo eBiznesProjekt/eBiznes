@@ -7,6 +7,8 @@ wymagania:
 python3
 scrapy ( pip install scrapy)
 
+czasami nie ma jakiegoś win32.api ( pip install pypiwin32)
+
 uruchamianie
-plik w formacie *.py
-komenda do odpalenia crawlera: scrapy runspider .\*.py
+cd ./crawler/zoo/
+scrapy crawl zookarina --nolog    // --nolog nie pokazuje debugu
