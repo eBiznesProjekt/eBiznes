@@ -14,7 +14,7 @@ BOT_NAME = 'zoo'
 SPIDER_MODULES = ['zoo.spiders']
 NEWSPIDER_MODULE = 'zoo.spiders'
 
-FEED_URI = 'data/items.csv'
+FEED_URI = 'data/koty.csv'
 FEED_FORMAT = 'csv'
 FEED_EXPORT_ENCODING = 'utf-8'
 

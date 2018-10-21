@@ -14,3 +14,5 @@ class ZooItem(scrapy.Item):
     price = scrapy.Field()
     image_url = scrapy.Field()
     description = scrapy.Field()
+    category = scrapy.Field()
+    main_category = scrapy.Field()
