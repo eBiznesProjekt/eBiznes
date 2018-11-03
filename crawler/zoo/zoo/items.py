@@ -15,4 +15,4 @@ class ZooItem(scrapy.Item):
     image_url = scrapy.Field()
     description = scrapy.Field()
     category = scrapy.Field()
-    main_category = scrapy.Field()
+    ilosc = scrapy.Field()

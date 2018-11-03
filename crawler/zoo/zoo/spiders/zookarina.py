@@ -3,37 +3,26 @@ import scrapy
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from zoo.items import ZooItem
-
+import random
 
 
 class ZookarinaSpider(CrawlSpider):
     name = 'zookarina'
     allowed_domains = ['www.zookarina.pl']
-    start_urls = ['https://www.zookarina.pl/pl/kategoria/224/adres%C3%B3wki-grawerowane',
-                  'https://www.zookarina.pl/pl/kategoria/13/akcesoria',
-                  'https://www.zookarina.pl/pl/kategoria/48/drapaki',
-                  'https://www.zookarina.pl/pl/kategoria/56/grzebienie-i-szczotki',
-                  'https://www.zookarina.pl/pl/kategoria/147/higiena',
-                  'https://www.zookarina.pl/pl/kategoria/63/karmy-mokre',
-                  'https://www.zookarina.pl/pl/kategoria/64/karmy-suche',
-                  'https://www.zookarina.pl/pl/kategoria/177/karmy-weterynaryjne',
-                  'https://www.zookarina.pl/pl/kategoria/59/kuwety-i-%C5%82opatki',
-                  'https://www.zookarina.pl/pl/kategoria/54/legowiska-i-budki',
-                  'https://www.zookarina.pl/pl/kategoria/51/miski',
-                  'https://www.zookarina.pl/pl/kategoria/127/pojemniki-na-karm%C4%99',
-                  'https://www.zookarina.pl/pl/kategoria/61/pozosta%C5%82e',
-                  'https://www.zookarina.pl/pl/kategoria/58/preparaty',
-                  'https://www.zookarina.pl/pl/kategoria/22/przysmaki',
-                  'https://www.zookarina.pl/pl/kategoria/57/szampony-i-od%C5%BCywki',
-                  'https://www.zookarina.pl/pl/kategoria/55/szelki-smycze-i-obro%C5%BCe',
-                  'https://www.zookarina.pl/pl/kategoria/152/%C5%9Brodki-na-paso%C5%BCyty',
-                  'https://www.zookarina.pl/pl/kategoria/53/torby',
-                  'https://www.zookarina.pl/pl/kategoria/98/transportery',
-                  'https://www.zookarina.pl/pl/kategoria/283/ubranka',
-                  'https://www.zookarina.pl/pl/kategoria/1000042/ubranka-pozabiegowe',
-                  'https://www.zookarina.pl/pl/kategoria/50/witaminy-i-suplementy',
-                  'https://www.zookarina.pl/pl/kategoria/52/zabawki',
-                  'https://www.zookarina.pl/pl/kategoria/60/żwirki',]
+    start_urls = ['https://www.zookarina.pl/pl/kategoria/208/akcesoria-inne',
+                  'https://www.zookarina.pl/pl/kategoria/1000122/domki',
+                  'https://www.zookarina.pl/pl/kategoria/211/higiena',
+                  'https://www.zookarina.pl/pl/kategoria/95/klatki',
+                  'https://www.zookarina.pl/pl/kategoria/1000121/miski-i-poidełka',
+                  'https://www.zookarina.pl/pl/kategoria/94/piasek',
+                  'https://www.zookarina.pl/pl/kategoria/182/podłoże',
+                  'https://www.zookarina.pl/pl/kategoria/91/pokarm',
+                  'https://www.zookarina.pl/pl/kategoria/131/preparaty',
+                  'https://www.zookarina.pl/pl/kategoria/1000125/przysmaki',
+                  'https://www.zookarina.pl/pl/kategoria/104/siano',
+                  'https://www.zookarina.pl/pl/kategoria/213/środki-na-pasożyty',
+                  'https://www.zookarina.pl/pl/kategoria/212/witaminy-i-suplementy',
+                  'https://www.zookarina.pl/pl/kategoria/1000123/zabawki']
     rules = (
         Rule(LinkExtractor(allow=(), restrict_css=
         ('.pagerNextPage',)),
@@ -77,6 +66,6 @@ class ZookarinaSpider(CrawlSpider):
             items['image_url'] = image_url
             items['price'] = price
             items['description'] = description
-            items['category'] = category
-            items['main_category'] = "Koty"
+            items['category'] = "Gryzonie/" + str(category)
+            items['ilosc'] = random.randint(10, 100)
         yield items
