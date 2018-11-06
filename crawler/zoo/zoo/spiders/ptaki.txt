@@ -1,0 +1,10 @@
+    start_urls = ['https://www.zookarina.pl/pl/kategoria/216/akcesoria',
+                  'https://www.zookarina.pl/pl/kategoria/65/budki-lęgowe',
+                  'https://www.zookarina.pl/pl/kategoria/294/karmniki',
+                  'https://www.zookarina.pl/pl/kategoria/109/higiena',
+                  'https://www.zookarina.pl/pl/kategoria/67/klatki-i-woliery',
+                  'https://www.zookarina.pl/pl/kategoria/217/piasek',
+                  'https://www.zookarina.pl/pl/kategoria/66/pokarm-i-przysmaki',
+                  'https://www.zookarina.pl/pl/kategoria/214/preparaty',
+                  'https://www.zookarina.pl/pl/kategoria/288/ptaki-zimujące',
+                  'https://www.zookarina.pl/pl/kategoria/215/środki-na-pasożyty']

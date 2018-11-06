@@ -1,0 +1,4 @@
+    start_urls = ['https://www.zookarina.pl/pl/kategoria/121/fretka',
+                  'https://www.zookarina.pl/pl/kategoria/119/jeż',
+                  'https://www.zookarina.pl/pl/kategoria/103/terrarystyka',
+                  'https://www.zookarina.pl/pl/kategoria/11/wędkarstwo']

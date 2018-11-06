@@ -9,20 +9,10 @@ import random
 class ZookarinaSpider(CrawlSpider):
     name = 'zookarina'
     allowed_domains = ['www.zookarina.pl']
-    start_urls = ['https://www.zookarina.pl/pl/kategoria/208/akcesoria-inne',
-                  'https://www.zookarina.pl/pl/kategoria/1000122/domki',
-                  'https://www.zookarina.pl/pl/kategoria/211/higiena',
-                  'https://www.zookarina.pl/pl/kategoria/95/klatki',
-                  'https://www.zookarina.pl/pl/kategoria/1000121/miski-i-poidełka',
-                  'https://www.zookarina.pl/pl/kategoria/94/piasek',
-                  'https://www.zookarina.pl/pl/kategoria/182/podłoże',
-                  'https://www.zookarina.pl/pl/kategoria/91/pokarm',
-                  'https://www.zookarina.pl/pl/kategoria/131/preparaty',
-                  'https://www.zookarina.pl/pl/kategoria/1000125/przysmaki',
-                  'https://www.zookarina.pl/pl/kategoria/104/siano',
-                  'https://www.zookarina.pl/pl/kategoria/213/środki-na-pasożyty',
-                  'https://www.zookarina.pl/pl/kategoria/212/witaminy-i-suplementy',
-                  'https://www.zookarina.pl/pl/kategoria/1000123/zabawki']
+    start_urls = ['https://www.zookarina.pl/pl/kategoria/121/fretka',
+                  'https://www.zookarina.pl/pl/kategoria/119/jeż',
+                  'https://www.zookarina.pl/pl/kategoria/103/terrarystyka',
+                  'https://www.zookarina.pl/pl/kategoria/11/wędkarstwo']
     rules = (
         Rule(LinkExtractor(allow=(), restrict_css=
         ('.pagerNextPage',)),
@@ -66,6 +56,6 @@ class ZookarinaSpider(CrawlSpider):
             items['image_url'] = image_url
             items['price'] = price
             items['description'] = description
-            items['category'] = "Gryzonie/" + str(category)
+            items['category'] = "Inne/" + str(category)
             items['ilosc'] = random.randint(10, 100)
         yield items
