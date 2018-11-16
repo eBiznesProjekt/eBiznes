@@ -1,7 +1,0 @@
-skopiuj 'docker.sh' do glownego folderu
-chmod 777 'docker.sh'
-./docker.sh
-
-sklep bedzie na http://localhost:8080
-MySql server z kontenera terrafelis-mysql, z hosta przez port 3307
-$ mysql -uroot -padmin -h localhost --port 3307
