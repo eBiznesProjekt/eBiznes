@@ -1,14 +1,3 @@
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=[spam-filter]CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=[spam-filter]CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=[spam-filter]COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=[spam-filter]TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=[spam-filter]UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=[spam-filter]FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=[spam-filter]SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=[spam-filter]SQL_NOTES, SQL_NOTES=0 */;
-
 --
 -- Baza danych: `prestashop`
 --
@@ -4568,8 +4557,8 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (226, NULL, NULL, 'HOMESLIDER_PAUSE', '7700', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (227, NULL, NULL, 'HOMESLIDER_LOOP', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (228, NULL, NULL, 'PS_BASE_DISTANCE_UNIT', 'm', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(229, NULL, NULL, 'PS_SHOP_DOMAIN', 'terrafelis.ddns.net', '0000-00-00 00:00:00', '2018-11-08 19:12:35'),
-(230, NULL, NULL, 'PS_SHOP_DOMAIN_SSL', 'terrafelis.ddns.net', '0000-00-00 00:00:00', '2018-11-08 19:12:35'),
+(229, NULL, NULL, 'PS_SHOP_DOMAIN', '172.20.83.52', '0000-00-00 00:00:00', '2018-11-08 19:12:35'),
+(230, NULL, NULL, 'PS_SHOP_DOMAIN_SSL', '172.20.83.52', '0000-00-00 00:00:00', '2018-11-08 19:12:35'),
 (231, NULL, NULL, 'PS_SHOP_NAME', 'TerraFelis', '0000-00-00 00:00:00', '2018-11-06 14:58:53'),
 (232, NULL, NULL, 'PS_SHOP_EMAIL', 'biznes.elektroniczne@gmail.com', '0000-00-00 00:00:00', '2018-11-06 14:59:09'),
 (233, NULL, NULL, 'PS_MAIL_METHOD', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -33212,7 +33201,7 @@ CREATE TABLE `ps_shop_url` (
 --
 
 INSERT INTO `ps_shop_url` (`id_shop_url`, `id_shop`, `domain`, `domain_ssl`, `physical_uri`, `virtual_uri`, `main`, `active`) VALUES
-(1, 1, 'terrafelis.ddns.net', 'terrafelis.ddns.net', '/', '', 1, 1);
+(1, 1, '172.20.83.52', '172.20.83.52', '/', '', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -40438,6 +40427,3 @@ ALTER TABLE `ps_web_browser`
 --
 ALTER TABLE `ps_zone`
   MODIFY `id_zone` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
