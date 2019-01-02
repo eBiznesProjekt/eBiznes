@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-27 18:48:20
+/* Smarty version 3.1.32, created on 2019-01-02 20:12:43
   from 'module:pssocialfollowpssocialfol' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bfd8364712322_61479078',
+  'unifunc' => 'content_5c2d0d2b1c1359_21548493',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_5bfd8364712322_61479078 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2d0d2b1c1359_21548493 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
 ));
 ?><!-- begin /var/www/html/themes/classic/modules/ps_socialfollow/ps_socialfollow.tpl -->

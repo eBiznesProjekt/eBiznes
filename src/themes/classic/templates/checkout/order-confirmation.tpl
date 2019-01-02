@@ -53,6 +53,37 @@
           }
         {/block}
 
+<script>
+
+ga('require', 'ecommerce');
+var ID = parseInt(Math.random()*1000000);
+var d = document.getElementsByClassName("order-line row");
+ga('ecommerce:addTransaction', {
+  'id': ID,                     // Transaction ID. Required.
+});
+for( var i = 0 ; i < d.length ; i++ )
+{
+	ga('ecommerce:addItem', {
+	  'id': ID,                     // Transaction ID. Required.
+	  'name': d[i].children[1].innerText,    // Product name. Required.
+	  'price': d[i].children[2].firstElementChild.children[0].innerText.replace(/\szł/g,"").replace(",",".") });                 // Unit price.
+}
+ga('ecommerce:send');
+
+
+/*var d = document.getElementsByClassName("order-line row");
+for( var i = 0 ; i < d.length ; i++ )
+{
+
+	var product_name = d[i].children[1].innerText;
+	var product_value = parseFloat(d[i].children[2].firstElementChild.children[2].innerText.replace(/\szł/g,"").replace(",","."));
+	console.log(product_name + " " + product_value);
+	ga('send','event','Transakcja','click',product_name,product_value);
+
+	//ga('set', 'dimension2', d[i].children[1].innerText); console.log(d[i].children[1].innerText);
+	//ga('set', 'metric2',   parseFloat( d[i].children[2].firstElementChild.children[2].innerText.replace(/\szł/g,"").replace(",",".")));
+}*/</script>
+
         {block name='order_details'}
           <div id="order-details" class="col-md-4">
             <h3 class="h3 card-title">{l s='Order details' d='Shop.Theme.Checkout'}:</h3>

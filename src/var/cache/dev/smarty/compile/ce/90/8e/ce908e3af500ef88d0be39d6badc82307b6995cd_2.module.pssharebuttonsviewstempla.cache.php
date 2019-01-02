@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-27 19:03:00
+/* Smarty version 3.1.32, created on 2019-01-02 20:03:24
   from 'module:pssharebuttonsviewstempla' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bfd86d4925da2_01943152',
+  'unifunc' => 'content_5c2d0afc886283_10997690',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfd86d4925da2_01943152 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2d0afc886283_10997690 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->compiled->nocache_hash = '11533566655bfd86d48d5467_17864122';
+$_smarty_tpl->compiled->nocache_hash = '4719011125c2d0afc833bb8_30475690';
 ?>
 <!-- begin /var/www/html/themes/classic/modules/ps_sharebuttons/views/templates/hook/ps_sharebuttons.tpl -->
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6132334155bfd86d48de041_65998121', 'social_sharing');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1242206605c2d0afc83ce80_71137082', 'social_sharing');
 ?>
 
 <!-- end /var/www/html/themes/classic/modules/ps_sharebuttons/views/templates/hook/ps_sharebuttons.tpl --><?php }
 /* {block 'social_sharing'} */
-class Block_6132334155bfd86d48de041_65998121 extends Smarty_Internal_Block
+class Block_1242206605c2d0afc83ce80_71137082 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'social_sharing' => 
   array (
-    0 => 'Block_6132334155bfd86d48de041_65998121',
+    0 => 'Block_1242206605c2d0afc83ce80_71137082',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

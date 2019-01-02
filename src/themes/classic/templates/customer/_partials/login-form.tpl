@@ -39,7 +39,9 @@
         {/foreach}
       {/block}
       <div class="forgot-password">
-        <a href="{$urls.pages.password}" rel="nofollow">
+        <a href="{$urls.pages.password}" rel="nofollow"
+onclick="ga('send', 'event', 'ZapomnienieHasla', 'click', 'przycisk', 0);"
+>
           {l s='Forgot your password?' d='Shop.Theme.Customeraccount'}
         </a>
       </div>
@@ -49,7 +51,9 @@
       <footer class="form-footer text-sm-center clearfix">
         <input type="hidden" name="submitLogin" value="1">
         {block name='form_buttons'}
-          <button id="submit-login" class="btn btn-primary" data-link-action="sign-in" type="submit" class="form-control-submit">
+          <button
+onclick="ga('send', 'event', 'Logowanie', 'click', 'przycisk', 0);"
+  id="submit-login" class="btn btn-primary" data-link-action="sign-in" type="submit" class="form-control-submit">
             {l s='Sign in' d='Shop.Theme.Actions'}
           </button>
         {/block}

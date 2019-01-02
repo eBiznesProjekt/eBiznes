@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-27 19:07:11
+/* Smarty version 3.1.32, created on 2019-01-02 20:27:59
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bfd87cf025799_06298361',
+  'unifunc' => 'content_5c2d10bfe7b1b6_94364948',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1541511692,
+      1 => 1543350736,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfd87cf025799_06298361 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2d10bfe7b1b6_94364948 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/themes/classic/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl -->
 <div class="block_newsletter col-lg-8 col-md-12 col-sm-12">
   <div class="row">
@@ -32,6 +32,7 @@ function content_5bfd87cf025799_06298361 (Smarty_Internal_Template $_smarty_tpl)
         <div class="row">
           <div class="col-xs-12">
             <input
+	      onclick="ga('send', 'event', 'Subskrypcja', 'click', 'przycisk', 0);"
               class="btn btn-primary float-xs-right hidden-xs-down"
               name="submitNewsletter"
               type="submit"
@@ -39,6 +40,7 @@ function content_5bfd87cf025799_06298361 (Smarty_Internal_Template $_smarty_tpl)
 "
             >
             <input
+	      onclick="ga('send', 'event', 'Subskrypcja', 'click', 'przycisk', 0);"
               class="btn btn-primary float-xs-right hidden-sm-up"
               name="submitNewsletter"
               type="submit"

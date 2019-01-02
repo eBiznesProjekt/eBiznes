@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-27 18:48:16
+/* Smarty version 3.1.32, created on 2019-01-02 20:12:41
   from 'module:pscustomtextpscustomtext.' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bfd8360dba2b3_29737195',
+  'unifunc' => 'content_5c2d0d291cec97_20267359',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,12 +18,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_5bfd8360dba2b3_29737195 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2d0d291cec97_20267359 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/modules/ps_customtext/ps_customtext.tpl -->
 <div id="custom-text">
   <h2>Najlepszy sklep zoologiczny</h2>
-<p><b>Tutaj kupisz wszystko co potrzebujesz dla swojego ulubieńca</b></p>
-<p>Jeśli masz zwierzęta w psa,  kota, akwarium, ptaka, gryzonia lub coś jeszcze innego u nas znajdziesz potrzebne ci akcesoria i jedzenie dla każdego z zwierząt.</p>
+<p><b>Tutaj kupisz wszystko co potrzebujesz dla swojego ulubieÅ„ca</b></p>
+<p>JeÅ›li masz zwierzÄ™ta w psa,Â  kota, akwarium, ptaka, gryzonia lub coÅ› jeszcze innego u nas znajdziesz potrzebne ci akcesoria i jedzenie dla kaÅ¼dego z zwierzÄ…t.</p>
 </div>
 <!-- end /var/www/html/modules/ps_customtext/ps_customtext.tpl --><?php }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-27 18:52:56
+/* Smarty version 3.1.32, created on 2019-01-02 19:58:09
   from '/var/www/html/modules/ps_googleanalytics/views/templates/admin/configuration.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bfd8478965d43_65143026',
+  'unifunc' => 'content_5c2d09c1a02944_28818419',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7f0116ea960d5d1622e83e4ba6610bccab42080b' => 
     array (
       0 => '/var/www/html/modules/ps_googleanalytics/views/templates/admin/configuration.tpl',
-      1 => 1543341111,
+      1 => 1543347621,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfd8478965d43_65143026 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2d09c1a02944_28818419 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="panel">
 	<div class="row" id="google_analytics_top">

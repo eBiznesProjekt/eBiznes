@@ -26,6 +26,15 @@
 
 {literal}
 <script type="text/javascript">
+
+<!-- Google Tag Manager -->
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPNBP42');
+<!-- End Google Tag Manager -->
+
 	(window.gaDevIds=window.gaDevIds||[]).push('d6YPbH');
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -56,5 +65,16 @@
     {/if}
 {literal}
     ga('require', 'ec');
+
+// Feature detects Navigation Timing API support.
+if (window.performance) {
+  // Gets the number of milliseconds since page load
+  // (and rounds the result since the value must be an integer).
+  var timeSincePageLoad = Math.round(performance.now());
+
+  // Sends the timing hit to Google Analytics.
+  ga('send', 'timing', 'JS Dependencies', 'load', timeSincePageLoad);
+}
+
 </script>
 {/literal}

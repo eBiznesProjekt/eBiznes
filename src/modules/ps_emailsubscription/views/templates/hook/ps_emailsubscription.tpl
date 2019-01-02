@@ -29,11 +29,11 @@
     <p class="notification {if $nw_error}notification-error{else}notification-success{/if}">{$msg}</p>
   {/if}
   <form action="{$urls.pages.index}" method="post">
-    <input type="text" name="email" value="{$value}" placeholder="{l s='Your e-mail' d='Modules.Emailsubscription.Shop'}" />
+    <input type="text" onclick="ga('send', 'event', 'Subskrypcja', 'click', 'przycisk', 0);" name="email" value="{$value}" placeholder="{l s='Your e-mail' d='Modules.Emailsubscription.Shop'}" />
     {if $conditions}
       <p>{$conditions}</p>
     {/if}
-    <input type="submit" value="ok" name="submitNewsletter" />
+    <input type="submit" onclick="ga('send', 'event', 'Subskrypcja', 'click', 'przycisk', 0);" value="ok" name="submitNewsletter" />
     {hook h='displayGDPRConsent' id_module=$id_module}
     <input type="hidden" name="action" value="0" />
   </form>

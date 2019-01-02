@@ -31,12 +31,14 @@
         <div class="row">
           <div class="col-xs-12">
             <input
+	      onclick="ga('send', 'event', 'Subskrypcja', 'click', 'przycisk', 0);"
               class="btn btn-primary float-xs-right hidden-xs-down"
               name="submitNewsletter"
               type="submit"
               value="{l s='Subscribe' d='Shop.Theme.Actions'}"
             >
             <input
+	      onclick="ga('send', 'event', 'Subskrypcja', 'click', 'przycisk', 0);"
               class="btn btn-primary float-xs-right hidden-sm-up"
               name="submitNewsletter"
               type="submit"

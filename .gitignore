@@ -6,7 +6,8 @@
 src/admin797qdgens/
 src/cache/
 src/img/
-src/var/
+./src/var/
+./src/modules/*
 
 # User-specific files
 *.suo
