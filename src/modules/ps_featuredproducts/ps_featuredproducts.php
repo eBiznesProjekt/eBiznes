@@ -125,7 +125,7 @@ class Ps_FeaturedProducts extends Module implements WidgetInterface
         $output = '';
         $errors = array();
 
-        if (Tools::isSubmit('submitHomeFeatured')) {
+        if (Tools::isKSubmit('submitHomeFeatured')) {
             $nbr = Tools::getValue('HOME_FEATURED_NBR');
             if (!Validate::isInt($nbr) || $nbr <= 0) {
                 $errors[] = $this->trans('The number of products is invalid. Please enter a positive number.', array(), 'Modules.Featuredproducts.Admin');
@@ -250,6 +250,7 @@ class Ps_FeaturedProducts extends Module implements WidgetInterface
         }
 
         return $this->fetch($this->templateFile, $this->getCacheId('ps_featuredproducts'));
+		
     }
 
     public function getWidgetVariables($hookName = null, array $configuration = [])
@@ -267,7 +268,9 @@ class Ps_FeaturedProducts extends Module implements WidgetInterface
 
     protected function getProducts()
     {
-        $category = new Category((int) Configuration::get('HOME_FEATURED_CAT'));
+		$category = new Category((int) Configuration::get('HOME_FEATURED_CAT'));
+
+        //$this->console_debug((int) Configuration::get('HOME_FEATURED_CAT'));
 
         $searchProvider = new CategoryProductSearchProvider(
             $this->context->getTranslator(),
@@ -278,21 +281,16 @@ class Ps_FeaturedProducts extends Module implements WidgetInterface
 
         $query = new ProductSearchQuery();
 
-        $nProducts = Configuration::get('HOME_FEATURED_NBR');
-        if ($nProducts < 0) {
-            $nProducts = 12;
-        }
+        // $nProducts = Configuration::get('HOME_FEATURED_NBR');
+        // if ($nProducts < 0) {
+        //     $nProducts = 12;
+        // }
 
-        $query
-            ->setResultsPerPage($nProducts)
-            ->setPage(1)
-        ;
-
-        if (Configuration::get('HOME_FEATURED_RANDOMIZE')) {
-            $query->setSortOrder(SortOrder::random());
-        } else {
-            $query->setSortOrder(new SortOrder('product', 'position', 'asc'));
-        }
+        // if (Configuration::get('HOME_FEATURED_RANDOMIZE')) {
+        //     $query->setSortOrder(SortOrder::random());
+        // } else {
+        //     $query->setSortOrder(new SortOrder('product', 'position', 'asc'));
+        // }
 
         $result = $searchProvider->runQuery(
             $context,
@@ -313,16 +311,49 @@ class Ps_FeaturedProducts extends Module implements WidgetInterface
             $this->context->getTranslator()
         );
 
-        $products_for_template = [];
+	//*****************************
+	// Pobranie danych z bazy
+	//*****************************	
+	
+    $products_for_template = [];
 
-        foreach ($result->getProducts() as $rawProduct) {
+	$_customer_ = Context::getContext()->customer; 
+	$_customer_id = $_customer_->id;
+
+	if($_customer_->logged == true) {
+        //
+        // Wyswietl produkty rekomendowane
+        $sql_getTable = 'SELECT id_customer, id_product, grade FROM '._DB_PREFIX_.'product_comment WHERE id_customer != 0';
+        $sql_array = Db::getInstance()->executeS($sql_getTable);
+        //TU ALGORYTM
+        // 
+	} else {
+        //
+        // Wyswietl najpopularniejsze
+        $sql_getTable = 'SELECT id_product, AVG(grade) AS OCENA ' .
+                         'FROM '._DB_PREFIX_.'product_comment ' .
+                         'GROUP BY id_product ' .
+                         'ORDER BY OCENA DESC ' . 
+                         'LIMIT 5';
+        
+        $sql_array = Db::getInstance()->executeS($sql_getTable);
+        // $this->console_debug($sql_array);
+    }
+
+        foreach ($sql_array as $product) {
+            $this->console_debug($product);
+
             $products_for_template[] = $presenter->present(
                 $presentationSettings,
-                $assembler->assembleProduct($rawProduct),
+                $assembler->assembleProduct(array('id_product' => $product['id_product'])),
                 $this->context->language
             );
-        }
-
+        } 
+        
         return $products_for_template;
+    }
+
+	public function console_debug($data) {
+        echo "<script>console.log(" . json_encode($data) . ")</script>";
     }
 }

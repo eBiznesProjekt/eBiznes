@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-01-02 20:09:55
+/* Smarty version 3.1.32, created on 2019-01-03 18:54:46
   from '/var/www/html/admin797qdgens/themes/default/template/controllers/categories/helpers/list/list_header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c2d0c831723e1_71679053',
+  'unifunc' => 'content_5c2e4c66499029_10429092',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c2d0c831723e1_71679053 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2e4c66499029_10429092 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
@@ -29,24 +29,24 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17958180735c2d0c82ee79d1_73284027', 'override_header');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17977816695c2e4c662d3a85_62176462', 'override_header');
 ?>
 
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10755966575c2d0c83087dd5_67724291', 'leadin');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9214459355c2e4c663b2433_96328717', 'leadin');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "helpers/list/list_header.tpl");
 }
 /* {block 'override_header'} */
-class Block_17958180735c2d0c82ee79d1_73284027 extends Smarty_Internal_Block
+class Block_17977816695c2e4c662d3a85_62176462 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'override_header' => 
   array (
-    0 => 'Block_17958180735c2d0c82ee79d1_73284027',
+    0 => 'Block_17977816695c2e4c662d3a85_62176462',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -96,12 +96,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'override_header'} */
 /* {block 'leadin'} */
-class Block_10755966575c2d0c83087dd5_67724291 extends Smarty_Internal_Block
+class Block_9214459355c2e4c663b2433_96328717 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'leadin' => 
   array (
-    0 => 'Block_10755966575c2d0c83087dd5_67724291',
+    0 => 'Block_9214459355c2e4c663b2433_96328717',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

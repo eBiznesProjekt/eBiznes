@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-01-02 20:12:41
+/* Smarty version 3.1.32, created on 2019-01-02 20:55:08
   from 'module:psfeaturedproductsviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c2d0d2914a789_12740797',
+  'unifunc' => 'content_5c2d171c80c080_10035322',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -24,28 +24,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_5c2d0d2914a789_12740797 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2d171c80c080_10035322 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/themes/classic/modules/ps_featuredproducts/views/templates/hook/ps_featuredproducts.tpl --><section class="featured-products clearfix">
   <h2 class="h2 products-section-title text-uppercase">
     Popularne produkty
   </h2>
   <div class="products">
           
-  <article class="product-miniature js-product-miniature" data-id-product="785" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+  <article class="product-miniature js-product-miniature" data-id-product="771" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
     <div class="thumbnail-container">
       
-                  <a href="http://172.20.83.58/zabawki/785-kong-extreme-flyer-frisbee.html" class="thumbnail product-thumbnail">
+                  <a href="http://172.20.83.58/zabawki/771-trixie-hantelek-do-aportowania.html" class="thumbnail product-thumbnail">
             <img
-              src = "http://172.20.83.58/788-home_default/kong-extreme-flyer-frisbee.jpg"
-              alt = "Kong Extreme Flyer FRISBEE"
-              data-full-size-image-url = "http://172.20.83.58/788-large_default/kong-extreme-flyer-frisbee.jpg"
+              src = "http://172.20.83.58/774-home_default/trixie-hantelek-do-aportowania.jpg"
+              alt = "TRIXIE HANTELEK DO APORTOWANIA"
+              data-full-size-image-url = "http://172.20.83.58/774-large_default/trixie-hantelek-do-aportowania.jpg"
             >
           </a>
               
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/785-kong-extreme-flyer-frisbee.html">Kong Extreme Flyer FRISBEE</a></h3>
+                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/771-trixie-hantelek-do-aportowania.html">TRIXIE HANTELEK DO APORTOWANIA</a></h3>
                   
 
         
@@ -54,7 +54,7 @@ function content_5c2d0d2914a789_12740797 (Smarty_Internal_Template $_smarty_tpl)
               
 
               <span class="sr-only">Cena</span>
-              <span itemprop="price" class="price">85,36 zł</span>
+              <span itemprop="price" class="price">57,35 zł</span>
 
               
 
@@ -92,21 +92,21 @@ function content_5c2d0d2914a789_12740797 (Smarty_Internal_Template $_smarty_tpl)
   </article>
 
           
-  <article class="product-miniature js-product-miniature" data-id-product="772" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+  <article class="product-miniature js-product-miniature" data-id-product="807" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
     <div class="thumbnail-container">
       
-                  <a href="http://172.20.83.58/zabawki/772-trixie-zabawka-mot-long-do-przeciagania.html" class="thumbnail product-thumbnail">
+                  <a href="http://172.20.83.58/zabawki/807-sum-plast-kosc-gryzak.html" class="thumbnail product-thumbnail">
             <img
-              src = "http://172.20.83.58/775-home_default/trixie-zabawka-mot-long-do-przeciagania.jpg"
-              alt = "TRIXIE ZABAWKA MOT-LONG DO..."
-              data-full-size-image-url = "http://172.20.83.58/775-large_default/trixie-zabawka-mot-long-do-przeciagania.jpg"
+              src = "http://172.20.83.58/810-home_default/sum-plast-kosc-gryzak.jpg"
+              alt = "sum-plast koÅ›Ä‡ gryzak"
+              data-full-size-image-url = "http://172.20.83.58/810-large_default/sum-plast-kosc-gryzak.jpg"
             >
           </a>
               
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/772-trixie-zabawka-mot-long-do-przeciagania.html">TRIXIE ZABAWKA MOT-LONG DO...</a></h3>
+                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/807-sum-plast-kosc-gryzak.html">sum-plast koÅ›Ä‡ gryzak</a></h3>
                   
 
         
@@ -115,312 +115,7 @@ function content_5c2d0d2914a789_12740797 (Smarty_Internal_Template $_smarty_tpl)
               
 
               <span class="sr-only">Cena</span>
-              <span itemprop="price" class="price">25,30 zł</span>
-
-              
-
-              
-            </div>
-                  
-
-        
-          
-<!-- begin module:productcomments/productcomments_reviews.tpl -->
-<!-- begin /var/www/html/modules/productcomments/productcomments_reviews.tpl --><div class="comments_note">
-    </div><!-- end /var/www/html/modules/productcomments/productcomments_reviews.tpl -->
-<!-- end module:productcomments/productcomments_reviews.tpl -->
-
-        
-      </div>
-
-      
-        <ul class="product-flags">
-                  </ul>
-      
-
-      <div class="highlighted-informations no-variants hidden-sm-down">
-        
-          <a class="quick-view" href="#" data-link-action="quickview">
-            <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
-          </a>
-        
-
-        
-                  
-      </div>
-
-    </div>
-  </article>
-
-          
-  <article class="product-miniature js-product-miniature" data-id-product="806" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
-    <div class="thumbnail-container">
-      
-                  <a href="http://172.20.83.58/zabawki/806-sum-plast-kostka-gryzak-dent.html" class="thumbnail product-thumbnail">
-            <img
-              src = "http://172.20.83.58/809-home_default/sum-plast-kostka-gryzak-dent.jpg"
-              alt = "Sum-plast kostka gryzak dent"
-              data-full-size-image-url = "http://172.20.83.58/809-large_default/sum-plast-kostka-gryzak-dent.jpg"
-            >
-          </a>
-              
-
-      <div class="product-description">
-        
-                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/806-sum-plast-kostka-gryzak-dent.html">Sum-plast kostka gryzak dent</a></h3>
-                  
-
-        
-                      <div class="product-price-and-shipping">
-              
-              
-
-              <span class="sr-only">Cena</span>
-              <span itemprop="price" class="price">17,91 zł</span>
-
-              
-
-              
-            </div>
-                  
-
-        
-          
-<!-- begin module:productcomments/productcomments_reviews.tpl -->
-<!-- begin /var/www/html/modules/productcomments/productcomments_reviews.tpl --><div class="comments_note">
-    </div><!-- end /var/www/html/modules/productcomments/productcomments_reviews.tpl -->
-<!-- end module:productcomments/productcomments_reviews.tpl -->
-
-        
-      </div>
-
-      
-        <ul class="product-flags">
-                  </ul>
-      
-
-      <div class="highlighted-informations no-variants hidden-sm-down">
-        
-          <a class="quick-view" href="#" data-link-action="quickview">
-            <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
-          </a>
-        
-
-        
-                  
-      </div>
-
-    </div>
-  </article>
-
-          
-  <article class="product-miniature js-product-miniature" data-id-product="769" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
-    <div class="thumbnail-container">
-      
-                  <a href="http://172.20.83.58/zabawki/769-trixie-mietowy-walek.html" class="thumbnail product-thumbnail">
-            <img
-              src = "http://172.20.83.58/772-home_default/trixie-mietowy-walek.jpg"
-              alt = "TRIXIE MIÄ˜TOWY WAÅEK"
-              data-full-size-image-url = "http://172.20.83.58/772-large_default/trixie-mietowy-walek.jpg"
-            >
-          </a>
-              
-
-      <div class="product-description">
-        
-                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/769-trixie-mietowy-walek.html">TRIXIE MIÄ˜TOWY WAÅEK</a></h3>
-                  
-
-        
-                      <div class="product-price-and-shipping">
-              
-              
-
-              <span class="sr-only">Cena</span>
-              <span itemprop="price" class="price">38,76 zł</span>
-
-              
-
-              
-            </div>
-                  
-
-        
-          
-<!-- begin module:productcomments/productcomments_reviews.tpl -->
-<!-- begin /var/www/html/modules/productcomments/productcomments_reviews.tpl --><div class="comments_note">
-    </div><!-- end /var/www/html/modules/productcomments/productcomments_reviews.tpl -->
-<!-- end module:productcomments/productcomments_reviews.tpl -->
-
-        
-      </div>
-
-      
-        <ul class="product-flags">
-                  </ul>
-      
-
-      <div class="highlighted-informations no-variants hidden-sm-down">
-        
-          <a class="quick-view" href="#" data-link-action="quickview">
-            <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
-          </a>
-        
-
-        
-                  
-      </div>
-
-    </div>
-  </article>
-
-          
-  <article class="product-miniature js-product-miniature" data-id-product="790" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
-    <div class="thumbnail-container">
-      
-                  <a href="http://172.20.83.58/zabawki/790-dingo-energy-kolba-z-raczka.html" class="thumbnail product-thumbnail">
-            <img
-              src = "http://172.20.83.58/793-home_default/dingo-energy-kolba-z-raczka.jpg"
-              alt = "dingo energy kolba z rÄ…czkÄ…"
-              data-full-size-image-url = "http://172.20.83.58/793-large_default/dingo-energy-kolba-z-raczka.jpg"
-            >
-          </a>
-              
-
-      <div class="product-description">
-        
-                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/790-dingo-energy-kolba-z-raczka.html">dingo energy kolba z rÄ…czkÄ…</a></h3>
-                  
-
-        
-                      <div class="product-price-and-shipping">
-              
-              
-
-              <span class="sr-only">Cena</span>
-              <span itemprop="price" class="price">15,93 zł</span>
-
-              
-
-              
-            </div>
-                  
-
-        
-          
-<!-- begin module:productcomments/productcomments_reviews.tpl -->
-<!-- begin /var/www/html/modules/productcomments/productcomments_reviews.tpl --><div class="comments_note">
-    </div><!-- end /var/www/html/modules/productcomments/productcomments_reviews.tpl -->
-<!-- end module:productcomments/productcomments_reviews.tpl -->
-
-        
-      </div>
-
-      
-        <ul class="product-flags">
-                  </ul>
-      
-
-      <div class="highlighted-informations no-variants hidden-sm-down">
-        
-          <a class="quick-view" href="#" data-link-action="quickview">
-            <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
-          </a>
-        
-
-        
-                  
-      </div>
-
-    </div>
-  </article>
-
-          
-  <article class="product-miniature js-product-miniature" data-id-product="749" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
-    <div class="thumbnail-container">
-      
-                  <a href="http://172.20.83.58/zabawki/749-trixie-sznurek-z-pilka-tenisowa-na-sznurku.html" class="thumbnail product-thumbnail">
-            <img
-              src = "http://172.20.83.58/752-home_default/trixie-sznurek-z-pilka-tenisowa-na-sznurku.jpg"
-              alt = "trixie sznurek z piÅ‚kÄ…..."
-              data-full-size-image-url = "http://172.20.83.58/752-large_default/trixie-sznurek-z-pilka-tenisowa-na-sznurku.jpg"
-            >
-          </a>
-              
-
-      <div class="product-description">
-        
-                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/749-trixie-sznurek-z-pilka-tenisowa-na-sznurku.html">trixie sznurek z piÅ‚kÄ…...</a></h3>
-                  
-
-        
-                      <div class="product-price-and-shipping">
-              
-              
-
-              <span class="sr-only">Cena</span>
-              <span itemprop="price" class="price">22,46 zł</span>
-
-              
-
-              
-            </div>
-                  
-
-        
-          
-<!-- begin module:productcomments/productcomments_reviews.tpl -->
-<!-- begin /var/www/html/modules/productcomments/productcomments_reviews.tpl --><div class="comments_note">
-    </div><!-- end /var/www/html/modules/productcomments/productcomments_reviews.tpl -->
-<!-- end module:productcomments/productcomments_reviews.tpl -->
-
-        
-      </div>
-
-      
-        <ul class="product-flags">
-                  </ul>
-      
-
-      <div class="highlighted-informations no-variants hidden-sm-down">
-        
-          <a class="quick-view" href="#" data-link-action="quickview">
-            <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
-          </a>
-        
-
-        
-                  
-      </div>
-
-    </div>
-  </article>
-
-          
-  <article class="product-miniature js-product-miniature" data-id-product="808" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
-    <div class="thumbnail-container">
-      
-                  <a href="http://172.20.83.58/zabawki/808-sum-plast-pilka-zapachowa.html" class="thumbnail product-thumbnail">
-            <img
-              src = "http://172.20.83.58/811-home_default/sum-plast-pilka-zapachowa.jpg"
-              alt = "sum-plast piÅ‚ka zapachowa"
-              data-full-size-image-url = "http://172.20.83.58/811-large_default/sum-plast-pilka-zapachowa.jpg"
-            >
-          </a>
-              
-
-      <div class="product-description">
-        
-                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/808-sum-plast-pilka-zapachowa.html">sum-plast piÅ‚ka zapachowa</a></h3>
-                  
-
-        
-                      <div class="product-price-and-shipping">
-              
-              
-
-              <span class="sr-only">Cena</span>
-              <span itemprop="price" class="price">4,18 zł</span>
+              <span itemprop="price" class="price">3,54 zł</span>
 
               
 
@@ -519,21 +214,21 @@ function content_5c2d0d2914a789_12740797 (Smarty_Internal_Template $_smarty_tpl)
   </article>
 
           
-  <article class="product-miniature js-product-miniature" data-id-product="794" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+  <article class="product-miniature js-product-miniature" data-id-product="802" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
     <div class="thumbnail-container">
       
-                  <a href="http://172.20.83.58/zabawki/794-trixie-rzutka-z-kolem-dog.html" class="thumbnail product-thumbnail">
+                  <a href="http://172.20.83.58/zabawki/802-trixie-mietowy-uchwyt-na-sznurku.html" class="thumbnail product-thumbnail">
             <img
-              src = "http://172.20.83.58/797-home_default/trixie-rzutka-z-kolem-dog.jpg"
-              alt = "TRIXIE RZUTKA Z KOÅEM DOG"
-              data-full-size-image-url = "http://172.20.83.58/797-large_default/trixie-rzutka-z-kolem-dog.jpg"
+              src = "http://172.20.83.58/805-home_default/trixie-mietowy-uchwyt-na-sznurku.jpg"
+              alt = "trixie miÄ™towy uchwyt na..."
+              data-full-size-image-url = "http://172.20.83.58/805-large_default/trixie-mietowy-uchwyt-na-sznurku.jpg"
             >
           </a>
               
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/794-trixie-rzutka-z-kolem-dog.html">TRIXIE RZUTKA Z KOÅEM DOG</a></h3>
+                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/802-trixie-mietowy-uchwyt-na-sznurku.html">trixie miÄ™towy uchwyt na...</a></h3>
                   
 
         
@@ -542,7 +237,7 @@ function content_5c2d0d2914a789_12740797 (Smarty_Internal_Template $_smarty_tpl)
               
 
               <span class="sr-only">Cena</span>
-              <span itemprop="price" class="price">73,99 zł</span>
+              <span itemprop="price" class="price">48,01 zł</span>
 
               
 
@@ -580,21 +275,21 @@ function content_5c2d0d2914a789_12740797 (Smarty_Internal_Template $_smarty_tpl)
   </article>
 
           
-  <article class="product-miniature js-product-miniature" data-id-product="759" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+  <article class="product-miniature js-product-miniature" data-id-product="804" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
     <div class="thumbnail-container">
       
-                  <a href="http://172.20.83.58/zabawki/759-trixie-kauczukowe-ringo.html" class="thumbnail product-thumbnail">
+                  <a href="http://172.20.83.58/zabawki/804-trixie-pilka-kauczukowa.html" class="thumbnail product-thumbnail">
             <img
-              src = "http://172.20.83.58/762-home_default/trixie-kauczukowe-ringo.jpg"
-              alt = "TRIXIE KAUCZUKOWE RINGO"
-              data-full-size-image-url = "http://172.20.83.58/762-large_default/trixie-kauczukowe-ringo.jpg"
+              src = "http://172.20.83.58/807-home_default/trixie-pilka-kauczukowa.jpg"
+              alt = "trixie piÅ‚ka kauczukowa"
+              data-full-size-image-url = "http://172.20.83.58/807-large_default/trixie-pilka-kauczukowa.jpg"
             >
           </a>
               
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/759-trixie-kauczukowe-ringo.html">TRIXIE KAUCZUKOWE RINGO</a></h3>
+                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/804-trixie-pilka-kauczukowa.html">trixie piÅ‚ka kauczukowa</a></h3>
                   
 
         
@@ -603,7 +298,251 @@ function content_5c2d0d2914a789_12740797 (Smarty_Internal_Template $_smarty_tpl)
               
 
               <span class="sr-only">Cena</span>
-              <span itemprop="price" class="price">11,00 zł</span>
+              <span itemprop="price" class="price">16,21 zł</span>
+
+              
+
+              
+            </div>
+                  
+
+        
+          
+<!-- begin module:productcomments/productcomments_reviews.tpl -->
+<!-- begin /var/www/html/modules/productcomments/productcomments_reviews.tpl --><div class="comments_note">
+    </div><!-- end /var/www/html/modules/productcomments/productcomments_reviews.tpl -->
+<!-- end module:productcomments/productcomments_reviews.tpl -->
+
+        
+      </div>
+
+      
+        <ul class="product-flags">
+                  </ul>
+      
+
+      <div class="highlighted-informations no-variants hidden-sm-down">
+        
+          <a class="quick-view" href="#" data-link-action="quickview">
+            <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
+          </a>
+        
+
+        
+                  
+      </div>
+
+    </div>
+  </article>
+
+          
+  <article class="product-miniature js-product-miniature" data-id-product="753" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+    <div class="thumbnail-container">
+      
+                  <a href="http://172.20.83.58/zabawki/753-sum-plast-hantel.html" class="thumbnail product-thumbnail">
+            <img
+              src = "http://172.20.83.58/756-home_default/sum-plast-hantel.jpg"
+              alt = "Sum-plast hantel"
+              data-full-size-image-url = "http://172.20.83.58/756-large_default/sum-plast-hantel.jpg"
+            >
+          </a>
+              
+
+      <div class="product-description">
+        
+                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/753-sum-plast-hantel.html">Sum-plast hantel</a></h3>
+                  
+
+        
+                      <div class="product-price-and-shipping">
+              
+              
+
+              <span class="sr-only">Cena</span>
+              <span itemprop="price" class="price">13,78 zł</span>
+
+              
+
+              
+            </div>
+                  
+
+        
+          
+<!-- begin module:productcomments/productcomments_reviews.tpl -->
+<!-- begin /var/www/html/modules/productcomments/productcomments_reviews.tpl --><div class="comments_note">
+    </div><!-- end /var/www/html/modules/productcomments/productcomments_reviews.tpl -->
+<!-- end module:productcomments/productcomments_reviews.tpl -->
+
+        
+      </div>
+
+      
+        <ul class="product-flags">
+                  </ul>
+      
+
+      <div class="highlighted-informations no-variants hidden-sm-down">
+        
+          <a class="quick-view" href="#" data-link-action="quickview">
+            <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
+          </a>
+        
+
+        
+                  
+      </div>
+
+    </div>
+  </article>
+
+          
+  <article class="product-miniature js-product-miniature" data-id-product="787" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+    <div class="thumbnail-container">
+      
+                  <a href="http://172.20.83.58/zabawki/787-kong-on-off-squeaker-whale.html" class="thumbnail product-thumbnail">
+            <img
+              src = "http://172.20.83.58/790-home_default/kong-on-off-squeaker-whale.jpg"
+              alt = "KONG ON/OFF SQUEAKER WHALE"
+              data-full-size-image-url = "http://172.20.83.58/790-large_default/kong-on-off-squeaker-whale.jpg"
+            >
+          </a>
+              
+
+      <div class="product-description">
+        
+                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/787-kong-on-off-squeaker-whale.html">KONG ON/OFF SQUEAKER WHALE</a></h3>
+                  
+
+        
+                      <div class="product-price-and-shipping">
+              
+              
+
+              <span class="sr-only">Cena</span>
+              <span itemprop="price" class="price">58,25 zł</span>
+
+              
+
+              
+            </div>
+                  
+
+        
+          
+<!-- begin module:productcomments/productcomments_reviews.tpl -->
+<!-- begin /var/www/html/modules/productcomments/productcomments_reviews.tpl --><div class="comments_note">
+    </div><!-- end /var/www/html/modules/productcomments/productcomments_reviews.tpl -->
+<!-- end module:productcomments/productcomments_reviews.tpl -->
+
+        
+      </div>
+
+      
+        <ul class="product-flags">
+                  </ul>
+      
+
+      <div class="highlighted-informations no-variants hidden-sm-down">
+        
+          <a class="quick-view" href="#" data-link-action="quickview">
+            <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
+          </a>
+        
+
+        
+                  
+      </div>
+
+    </div>
+  </article>
+
+          
+  <article class="product-miniature js-product-miniature" data-id-product="757" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+    <div class="thumbnail-container">
+      
+                  <a href="http://172.20.83.58/zabawki/757-trixie-gryzak-kauczukowy.html" class="thumbnail product-thumbnail">
+            <img
+              src = "http://172.20.83.58/760-home_default/trixie-gryzak-kauczukowy.jpg"
+              alt = "TRIXIE GRYZAK KAUCZUKOWY"
+              data-full-size-image-url = "http://172.20.83.58/760-large_default/trixie-gryzak-kauczukowy.jpg"
+            >
+          </a>
+              
+
+      <div class="product-description">
+        
+                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/757-trixie-gryzak-kauczukowy.html">TRIXIE GRYZAK KAUCZUKOWY</a></h3>
+                  
+
+        
+                      <div class="product-price-and-shipping">
+              
+              
+
+              <span class="sr-only">Cena</span>
+              <span itemprop="price" class="price">70,18 zł</span>
+
+              
+
+              
+            </div>
+                  
+
+        
+          
+<!-- begin module:productcomments/productcomments_reviews.tpl -->
+<!-- begin /var/www/html/modules/productcomments/productcomments_reviews.tpl --><div class="comments_note">
+    </div><!-- end /var/www/html/modules/productcomments/productcomments_reviews.tpl -->
+<!-- end module:productcomments/productcomments_reviews.tpl -->
+
+        
+      </div>
+
+      
+        <ul class="product-flags">
+                  </ul>
+      
+
+      <div class="highlighted-informations no-variants hidden-sm-down">
+        
+          <a class="quick-view" href="#" data-link-action="quickview">
+            <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
+          </a>
+        
+
+        
+                  
+      </div>
+
+    </div>
+  </article>
+
+          
+  <article class="product-miniature js-product-miniature" data-id-product="796" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+    <div class="thumbnail-container">
+      
+                  <a href="http://172.20.83.58/zabawki/796-trixie-kauczukowy-gryzak.html" class="thumbnail product-thumbnail">
+            <img
+              src = "http://172.20.83.58/799-home_default/trixie-kauczukowy-gryzak.jpg"
+              alt = "TRIXIE KAUCZUKOWY GRYZAK"
+              data-full-size-image-url = "http://172.20.83.58/799-large_default/trixie-kauczukowy-gryzak.jpg"
+            >
+          </a>
+              
+
+      <div class="product-description">
+        
+                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/796-trixie-kauczukowy-gryzak.html">TRIXIE KAUCZUKOWY GRYZAK</a></h3>
+                  
+
+        
+                      <div class="product-price-and-shipping">
+              
+              
+
+              <span class="sr-only">Cena</span>
+              <span itemprop="price" class="price">23,81 zł</span>
 
               
 
@@ -702,21 +641,21 @@ function content_5c2d0d2914a789_12740797 (Smarty_Internal_Template $_smarty_tpl)
   </article>
 
           
-  <article class="product-miniature js-product-miniature" data-id-product="811" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+  <article class="product-miniature js-product-miniature" data-id-product="808" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
     <div class="thumbnail-container">
       
-                  <a href="http://172.20.83.58/zabawki/811-sum-plast-pilka-z-kolcami.html" class="thumbnail product-thumbnail">
+                  <a href="http://172.20.83.58/zabawki/808-sum-plast-pilka-zapachowa.html" class="thumbnail product-thumbnail">
             <img
-              src = "http://172.20.83.58/814-home_default/sum-plast-pilka-z-kolcami.jpg"
-              alt = "Sum-plast piÅ‚ka z kolcami"
-              data-full-size-image-url = "http://172.20.83.58/814-large_default/sum-plast-pilka-z-kolcami.jpg"
+              src = "http://172.20.83.58/811-home_default/sum-plast-pilka-zapachowa.jpg"
+              alt = "sum-plast piÅ‚ka zapachowa"
+              data-full-size-image-url = "http://172.20.83.58/811-large_default/sum-plast-pilka-zapachowa.jpg"
             >
           </a>
               
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/811-sum-plast-pilka-z-kolcami.html">Sum-plast piÅ‚ka z kolcami</a></h3>
+                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/808-sum-plast-pilka-zapachowa.html">sum-plast piÅ‚ka zapachowa</a></h3>
                   
 
         
@@ -725,7 +664,68 @@ function content_5c2d0d2914a789_12740797 (Smarty_Internal_Template $_smarty_tpl)
               
 
               <span class="sr-only">Cena</span>
-              <span itemprop="price" class="price">6,30 zł</span>
+              <span itemprop="price" class="price">4,18 zł</span>
+
+              
+
+              
+            </div>
+                  
+
+        
+          
+<!-- begin module:productcomments/productcomments_reviews.tpl -->
+<!-- begin /var/www/html/modules/productcomments/productcomments_reviews.tpl --><div class="comments_note">
+    </div><!-- end /var/www/html/modules/productcomments/productcomments_reviews.tpl -->
+<!-- end module:productcomments/productcomments_reviews.tpl -->
+
+        
+      </div>
+
+      
+        <ul class="product-flags">
+                  </ul>
+      
+
+      <div class="highlighted-informations no-variants hidden-sm-down">
+        
+          <a class="quick-view" href="#" data-link-action="quickview">
+            <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
+          </a>
+        
+
+        
+                  
+      </div>
+
+    </div>
+  </article>
+
+          
+  <article class="product-miniature js-product-miniature" data-id-product="749" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+    <div class="thumbnail-container">
+      
+                  <a href="http://172.20.83.58/zabawki/749-trixie-sznurek-z-pilka-tenisowa-na-sznurku.html" class="thumbnail product-thumbnail">
+            <img
+              src = "http://172.20.83.58/752-home_default/trixie-sznurek-z-pilka-tenisowa-na-sznurku.jpg"
+              alt = "trixie sznurek z piÅ‚kÄ…..."
+              data-full-size-image-url = "http://172.20.83.58/752-large_default/trixie-sznurek-z-pilka-tenisowa-na-sznurku.jpg"
+            >
+          </a>
+              
+
+      <div class="product-description">
+        
+                      <h3 class="h3 product-title" itemprop="name"><a href="http://172.20.83.58/zabawki/749-trixie-sznurek-z-pilka-tenisowa-na-sznurku.html">trixie sznurek z piÅ‚kÄ…...</a></h3>
+                  
+
+        
+                      <div class="product-price-and-shipping">
+              
+              
+
+              <span class="sr-only">Cena</span>
+              <span itemprop="price" class="price">22,46 zł</span>
 
               
 
