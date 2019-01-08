@@ -20,6 +20,7 @@ SET time_zone = "+00:00";
 -- Baza danych: `prestashop`
 --
 
+
 -- --------------------------------------------------------
 
 --
@@ -40557,6 +40558,6 @@ ALTER TABLE `ps_web_browser`
 --
 ALTER TABLE `ps_zone`
   MODIFY `id_zone` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+ALTER DATABASE database_name CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+ALTER TABLE table_name CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

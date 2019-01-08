@@ -38,6 +38,9 @@ use PrestaShop\PrestaShop\Core\Product\Search\ProductSearchContext;
 use PrestaShop\PrestaShop\Core\Product\Search\ProductSearchQuery;
 use PrestaShop\PrestaShop\Core\Product\Search\SortOrder;
 
+include("recommendations.php");
+include("ga_reports.php");
+
 class Ps_FeaturedProducts extends Module implements WidgetInterface
 {
     private $templateFile;
@@ -77,6 +80,7 @@ class Ps_FeaturedProducts extends Module implements WidgetInterface
             && $this->registerHook('deleteproduct')
             && $this->registerHook('categoryUpdate')
             && $this->registerHook('displayHome')
+            && $this->registerHook('displayFooterProduct')
             && $this->registerHook('displayOrderConfirmation2')
             && $this->registerHook('displayCrossSellingShoppingCart')
             && $this->registerHook('actionAdminGroupsControllerSaveAfter')
@@ -268,37 +272,32 @@ class Ps_FeaturedProducts extends Module implements WidgetInterface
 
     protected function getProducts()
     {
-		$category = new Category((int) Configuration::get('HOME_FEATURED_CAT'));
-
-        //$this->console_debug((int) Configuration::get('HOME_FEATURED_CAT'));
-
-        $searchProvider = new CategoryProductSearchProvider(
-            $this->context->getTranslator(),
-            $category
-        );
-
-        $context = new ProductSearchContext($this->context);
-
-        $query = new ProductSearchQuery();
-
+		//$category = new Category((int) Configuration::get('HOME_FEATURED_CAT'));
+        //$searchProvider = new CategoryProductSearchProvider(
+        //    $this->context->getTranslator(),
+        //    $category
+        //);
+        //
+        //$context = new ProductSearchContext($this->context);
+        //
+        //$query = new ProductSearchQuery();
         // $nProducts = Configuration::get('HOME_FEATURED_NBR');
         // if ($nProducts < 0) {
         //     $nProducts = 12;
         // }
-
         // if (Configuration::get('HOME_FEATURED_RANDOMIZE')) {
         //     $query->setSortOrder(SortOrder::random());
         // } else {
         //     $query->setSortOrder(new SortOrder('product', 'position', 'asc'));
         // }
+        //$result = $searchProvider->runQuery(
+        //    $context,
+        //    $query
+        //);
 
-        $result = $searchProvider->runQuery(
-            $context,
-            $query
-        );
+		$number_of_items = 5;
 
         $assembler = new ProductAssembler($this->context);
-
         $presenterFactory = new ProductPresenterFactory($this->context);
         $presentationSettings = $presenterFactory->getPresentationSettings();
         $presenter = new ProductListingPresenter(
@@ -311,46 +310,88 @@ class Ps_FeaturedProducts extends Module implements WidgetInterface
             $this->context->getTranslator()
         );
 
-	//*****************************
-	// Pobranie danych z bazy
-	//*****************************	
-	
-    $products_for_template = [];
+		//*****************************
+		// Pobranie danych z bazy
+		//*****************************	
 
-	$_customer_ = Context::getContext()->customer; 
-	$_customer_id = $_customer_->id;
-
-	if($_customer_->logged == true) {
-        //
-        // Wyswietl produkty rekomendowane
-        $sql_getTable = 'SELECT id_customer, id_product, grade FROM '._DB_PREFIX_.'product_comment WHERE id_customer != 0';
-        $sql_array = Db::getInstance()->executeS($sql_getTable);
-        //TU ALGORYTM
-        // 
-	} else {
-        //
-        // Wyswietl najpopularniejsze
-        $sql_getTable = 'SELECT id_product, AVG(grade) AS OCENA ' .
-                         'FROM '._DB_PREFIX_.'product_comment ' .
-                         'GROUP BY id_product ' .
-                         'ORDER BY OCENA DESC ' . 
-                         'LIMIT 5';
-        
-        $sql_array = Db::getInstance()->executeS($sql_getTable);
-        // $this->console_debug($sql_array);
-    }
-
-        foreach ($sql_array as $product) {
-            $this->console_debug($product);
-
+		$_customer_ = Context::getContext()->customer; 
+		$result = [];
+		if($_customer_->logged == true) {
+			//Ready comments and Recommend class
+			$sql_getTable = 'SELECT id_customer, customer_name, id_product, grade FROM '._DB_PREFIX_.'product_comment WHERE id_customer != 0';
+			$sql_array = Db::getInstance()->executeS($sql_getTable);
+			$products = array();
+			foreach($sql_array as $p) {
+				$products[$p['id_customer']][$p['id_product'] . " "] = $p['grade'];
+			}
+			$recommend = new Recommend();
+			$confirm_order = "/potwierdzenie-zamowienia";
+			if($_SERVER['REQUEST_URI']!=="/" && substr($_SERVER['REQUEST_URI'], 0, strlen($confirm_order)) !== $confirm_order )
+			{
+				//Item Based
+				$id_product = (int)Tools::getValue('id_product');
+				$products = $recommend->transformPreferences($products);
+				
+				if(array_key_exists($id_product." ", $products)) {
+					$results = $recommend->matchItems($products, $id_product." ");
+					arsort($results);
+					foreach($results as $key=>$value) {
+						$result[] = array('id_product' => (int)$key); 
+					}
+				}
+			}
+			else
+			{
+				//User Based
+				$_customer_id = $_customer_->id;
+				if(array_key_exists($_customer_id, $products)) {
+					$results = $recommend->getRecommendations($products, $_customer_id);
+					arsort($results);
+					foreach($results as $key=>$value) {
+						$result[] = array('id_product' => (int)$key); 
+					}
+				}
+			}
+		}
+		
+		while(count($result) > $number_of_items)
+            array_pop($result);
+            
+        $temp = $this->getTopProducts($number_of_items);
+		
+		for($i = 0; count($result) < $number_of_items; $i++) {
+			if(!in_array(array('id_product' => $temp[$i]['id_product']), $result)) {
+				$result[] = $temp[$i];
+			}
+		}
+		
+		
+        //WYSWIETLANIE
+		$products_for_template = [];
+        foreach ($result as $product) {
             $products_for_template[] = $presenter->present(
                 $presentationSettings,
                 $assembler->assembleProduct(array('id_product' => $product['id_product'])),
                 $this->context->language
             );
         } 
-        
+
         return $products_for_template;
+    }
+
+    public function getTopProducts($number) {
+        // Wyswietl 5 najczesciej kupowanych produktow
+        $_GAReport_ = new GAReport();
+        $products = $_GAReport_->getTopProducts();
+        $result = array();
+
+        arsort($products);
+
+        foreach($products as $key=>$value) {
+            $result[] = array('id_product' => (int)$key); 
+        }
+
+        return array_slice($result, 0, 6);
     }
 
 	public function console_debug($data) {

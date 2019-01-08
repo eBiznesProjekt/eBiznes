@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-01-03 19:10:09
+/* Smarty version 3.1.32, created on 2019-01-08 17:24:33
   from 'module:pscontactinfopscontactinf' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c2e500158aff4_85684167',
+  'unifunc' => 'content_5c34cec1e75f63_15626289',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c2e500158aff4_85684167 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c34cec1e75f63_15626289 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/themes/classic/modules/ps_contactinfo/ps_contactinfo.tpl -->
 <div class="block-contact col-md-4 links wrapper">
   <div class="hidden-sm-down">

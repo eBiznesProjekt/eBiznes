@@ -33,7 +33,7 @@ class AuthControllerCore extends FrontController
     public function checkAccess()
     {
         if ($this->context->customer->isLogged() && !$this->ajax) {
-            $this->redirect_after = ($this->authRedirection) ? urlencode($this->authRedirection) : 'my-account';
+            $this->redirect_after = ($this->authRedirection) ? urlencode($this->authRedirection) : '';
             $this->redirect();
         }
 
@@ -101,7 +101,7 @@ class AuthControllerCore extends FrontController
             // so...
             if ($this->authRedirection) {
                 // We may need to go there if defined
-                return $this->redirectWithNotifications($this->authRedirection);
+                return $this->redirectWithNotifications(__PS_BASE_URI__);
             }
 
             // go home
